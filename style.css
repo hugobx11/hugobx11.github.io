@@ -323,13 +323,45 @@ section {
 
 
 
-.sustainable {
+
+.international {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 2rem;
 
+    padding-bottom: 6rem;
+}
+.international h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.2rem;
+    font-weight: 700;
+    margin-top: 20px;
+    color: var(--text-color);
+}
+.international p {
+    font-size: 1.6rem;
+    margin-top: 10px;
+}
+.international img {
+    width: 60%;
+    height: 60%;
+}
+
+
+
+
+
+.sustainable {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    background: var(--second-bg-color);
     padding-bottom: 6rem;
 }
 .sustainable h2 {
@@ -354,7 +386,7 @@ section {
 .contact {
     min-height: auto;
     padding-bottom: 7rem;
-    background: var(--second-bg-color);
+    /* background: var(--second-bg-color); */
 }
 .contact h2 {
     display: flex;
@@ -415,6 +447,42 @@ section {
 .contact form .btn-box.btns .btn {
     cursor: pointer;
 }
+
+.contact-box {
+    text-align: center;
+}
+
+.contact-box .field {
+    width: 100%;
+    background: transparent;
+    border: var(--border);
+    border-radius: .3rem;
+    padding: .8rem;
+    font-size: 1rem;
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
+}
+
+.contact-box .field::placeholder {
+    color: var(--text-color);
+}
+
+.contact-box textarea {
+    resize: none;
+    height: 15rem;
+}
+
+.contact-box .btn {
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
 
 
 .footer {
