@@ -7,6 +7,12 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdn.emailjs.com/dist/email.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("jqvKUf03Gpoeh6qVL");
+        })();
+    </script>
 </head>
 <body>
 
@@ -28,6 +34,7 @@
             <a href="#about">About</a>
             <a href="#education">Education</a>
             <a href="#skills">Projects</a>
+            <a href="#skills">Mobility</a>
             <a href="#sustainable">SCE</a>
             <a href="#contact">Contact</a>
         </nav>
@@ -65,6 +72,10 @@
                     call_made
                 </span></a>
 
+                <a href="pdfutiles/ppphbx.pdf">PPP<span class="material-symbols-outlined">
+                    call_made
+                </span></a>
+
             </div>
         </div>
     
@@ -80,8 +91,17 @@
 
     <section class="about" id="about">
         <h2>About Me</h2>
-        <div class="video"><iframe width="560" height="315" src="https://youtu.be/b-C5XKpqSo4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
-        <p>(If it doesn't work please use that link : https://youtu.be/b-C5XKpqSo4)</p>
+        <div class="video">
+            <iframe
+                width="432"
+                height="243"
+                src="https://www.youtube.com/embed/b-C5XKpqSo4" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        </div>
     </section>
 
     <section class="education" id="education">
@@ -203,6 +223,12 @@
     </section>
 
 
+    <section class="international" id="international">
+        <h2>International Mobility</h2>
+        <p>As a student at ENSEEIHT, my international mobility experience has been a transformative chapter in both my academic and personal life. I had the privilege of spending a semester at Dublin City University (DCU) in Dublin, Ireland, which offered me a unique opportunity to expand my horizons and immerse myself in a different educational and cultural environment. At DCU, I was able to explore cutting-edge courses aligned with my field of study, benefiting from a new perspective on engineering and technology while collaborating with students and faculty from diverse backgrounds. The experience challenged me to adapt to a different academic system, embrace new learning methods, and enhance my problem-solving skills in dynamic and multicultural settings. Beyond academics, living in Dublin allowed me to experience Irish culture firsthand, from its warm and welcoming people to its vibrant traditions and breathtaking landscapes. This international mobility not only strengthened my technical expertise but also fostered invaluable personal growth, such as greater independence, improved intercultural communication, and a broadened worldview. It reinforced my belief in the importance of global collaboration and equipped me with skills that will undoubtedly be assets in my future career. Overall, my semester at DCU was a defining moment that enriched my education and prepared me to thrive in an increasingly interconnected world.</p>
+    </section>
+
+
     <section class="sustainable" id="sustainable">
         <h2>Sustainability & Civic Engagement</h2>
         <img src="images/Capture d'écran test a .png" alt="graphetest"/>
@@ -212,19 +238,17 @@
     <section class="contact" id="contact">
         <h2> Contact Me!</h2>
 
-        <p>Out of service, you can contact me here : hugo.baux@etu.inp-n7.fr</p>
-
-        <form action="#">
+        <form id="contact-form">
 
             <div class="input-box">
 
                 <div class="input-field">
-                    <input type="text" placeholder="Full Name" required>
+                    <input type="text" placeholder="Full Name" name="user_name" required>
                     <span class="focus"></span>
                 </div>
 
                 <div class="input-field">
-                    <input type="text" placeholder="Email Address" required>
+                    <input type="text" placeholder="Email Address" name="user_email" required>
                     <span class="focus"></span>
                 </div>
 
@@ -233,27 +257,38 @@
             <div class="input-box">
 
                 <div class="input-field">
-                    <input type="number" placeholder="Mobile Number" required>
+                    <input type="number" placeholder="Mobile Number" name="user_mobile" required>
                     <span class="focus"></span>
                 </div>
 
                 <div class="input-field">
-                    <input type="text" placeholder="Email Subject" required>
+                    <input type="text" placeholder="Email Subject" name="user_subject" required>
                     <span class="focus"></span>
                 </div>
 
             </div>
 
             <div class="textarea-field">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
                 <span class="focus"></span>
             </div>
 
 
             <div class="btn-box">
-                <button type="submit" class="btn">Submit</button>
+                <!-- <button type="submit" class="btn">Submit</button> -->
+                <input type="submit" class="btn" value="Send Message">
             </div>
+            
         </form>
+
+        <!-- <div class="contact-box">
+            <form id="contact-form">
+                <input type="text" class="field" placeholder="Full name" name="user_name" required>
+                <input type="email" class="field" placeholder="Email Address" name="user_email" required>
+                <textarea name="message" cols="30" rows="10" class="field" placeholder="Your Message" required></textarea>
+                <input type="submit" class="btn" value="Send Message">
+            </form>
+        </div> -->
     </section>
     
 
